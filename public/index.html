@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="font-poppins scroll-smooth">
+    <!-- navbar -->
+    <header class="bg-transparent absolute top-0 w-full flex items-center z-10">
+      <div class="container">
+        <!-- nav kiri -->
+        <div class="flex items-center relative justify-between">
+          <nav
+            id="nav-menu"
+            class="hidden right-0 lg:bg-transparent bg-white absolute py-5 shadow-lg rounded-lg max-w-[250px] top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none"
+          >
+            <ul class="block lg:flex">
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base py-2 mx-8 flex group-hover:text-secondary"
+                  >Home</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-base py-2 mx-8 flex group-hover:text-secondary"
+                  >About Me</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-base py-2 mx-8 flex group-hover:text-secondary"
+                  >Our Skills</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-base py-2 mx-8 flex group-hover:text-secondary"
+                  >Project</a
+                >
+              </li>
+              <li class="group">
+                <button
+                  class="lg:hidden text-base py-2 mx-8 flex bg-secondary my-3 text-white rounded-md p-2 px-[15px] hover:bg-third"
+                >
+                  Login
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="lg:ml-0 ml-16">
+            <a href="#home" class="font-thin text-lg text-secondary block py-6"
+              ><span class="font-bold text-secondary">Agus</span> saputra</a
+            >
+          </div>
+          <!-- nav kanan -->
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <button
+              class="hidden text-base py-2 mx-8 lg:flex bg-secondary my-3 text-white rounded-md p-2 px-7 hover:bg-third"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section
+      class="hero-section pt-36 bg-primary sm:justify-between p-16 sm:flex" id="home"
+    >
+      <div class="hero-left sm:w-3/6 w-full sm:px-4">
+        <h3 class="lg:text-3xl font-bold mb-14 text-secondary">
+          Agus <span class="font-extralight text-secondary">saputra</span>
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto
+          ratione ducimus ullam accusamus harum tempore aspernatur quidem
+          tempora similique at illum, eos autem amet temporibus aliquam
+          voluptate? Placeat veniam autem recusandae doloribus ipsam amet, neque
+          in facilis magnam ipsa, quasi quis. Sunt architecto quo eius nisi
+          consequatur, placeat cumque eaque, modi, assumenda hic tenetur
+          consectetur ea. Aut consequuntur omnis animi! Ullam veritatis
+          doloribus quas autem, repudiandae sint ducimus quam perspiciatis nemo
+          est harum? In, facilis minus quaerat magnam aliquam culpa incidunt
+          totam velit neque deleniti non reiciendis sit voluptatum dolor est
+          praesentium labore sequi assumenda molestiae repudiandae perspiciatis
+          adipisci.
+        </p>
+        <button
+          class="border-secondary border-2 my-3 hover:text-white hover:border-white rounded-md mt-5 p-2 px-7 hover:bg-third"
+        >
+          Contact me
+        </button>
+      </div>
+      <div class="relative hero-right sm:w-3/6 w-full">
+        <span class="absoulte top-3">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#3D0C14"
+              d="M30.1,-35.7C45.5,-30.1,69.2,-30.1,71.2,-23.3C73.2,-16.4,53.5,-2.7,40.9,6.2C28.2,15.1,22.5,19.1,16.9,30.1C11.2,41.2,5.6,59.2,-4.9,66C-15.4,72.7,-30.8,68.2,-43.4,59.4C-55.9,50.6,-65.6,37.5,-65.8,24.4C-65.9,11.2,-56.5,-2.1,-51.8,-16.9C-47.1,-31.8,-47.1,-48.3,-39.2,-56.2C-31.4,-64.2,-15.7,-63.7,-4.2,-58C7.3,-52.2,14.6,-41.2,30.1,-35.7Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </span>
+        <!-- <img src="../img/agus.png" alt="" class="absoulte" /> -->
+
+        <!-- <span class="absoulte top-3">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#FFFFFF"
+              d="M40.7,-50.6C48.5,-50.3,47.8,-32.8,48.7,-18.5C49.6,-4.3,52.1,6.7,50.2,17.4C48.3,28.1,41.9,38.5,32.8,46.4C23.7,54.3,11.8,59.8,0.5,59.1C-10.8,58.4,-21.7,51.6,-33.8,44.6C-45.8,37.7,-59.2,30.6,-60.6,20.9C-62,11.3,-51.5,-1,-43,-10C-34.6,-19,-28.3,-24.6,-21.5,-25.3C-14.7,-26,-7.3,-21.7,4.5,-27.9C16.4,-34.1,32.8,-50.9,40.7,-50.6Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </span> -->
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="section-2 bg-secondary">
+      <div class="contoh">
+        <div class="section-2-text text-white text-center">
+          <h3>Hello</h3>
+
+          <div class="contoh1 flex justify-center mt-8">
+            <p class="max-w-[400px] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              accusamus enim voluptatibus reiciendis vitae dignissimos tempora
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center my-5">
+          <div
+            class="section-2-logo sm:flex items-center gap-8 px-10 flex flex-wrap justify-center"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1710880136758-2ff41504dd3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-[120px] h-[40px]"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1710880136758-2ff41504dd3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-[120px] h-[40px]"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1710880136758-2ff41504dd3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-[120px] h-[40px]"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1710880136758-2ff41504dd3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-[120px] h-[40px]"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1710880136758-2ff41504dd3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-[120px] h-[40px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="3-and-4 relative">
+      <!-- section 3 -->
+      <section class="section-3 bg-primary">
+        <div class="section-3-left w-1/2 p-16 ml-16">
+          <h3>helo world coba ini</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In debitis
+            aliquam explicabo praesentium repudiandae molestias voluptates,
+            exercitationem maiores nisi quia at, voluptate voluptas consequuntur
+          </p>
+          <br />
+          <li>ppppppp</li>
+          <br />
+          <li>ppppppp</li>
+          <br />
+          <li>ppppppp</li>
+        </div>
+      </section>
+
+      <!--media -->
+      <div class="contoh2 w-full p-5 absolute top-0 flex justify-center">
+        <div class="w-1/2"></div>
+        <div class="w-1/2 flex justify-center">
+          <img src="https://source.unsplash.com/400x500?art" alt="" class="" />
+        </div>
+      </div>
+
+      <!-- section 4 -->
+      <section class="section-4 flex bg-primary">
+        <div
+          class="section-4-left bg-white sm:p-18 p-12 w-1/2 flex justify-center"
+        >
+          <img
+            src="https://source.unsplash.com/400x600"
+            alt=""
+            class="rounded-md"
+          />
+        </div>
+
+        <div class="section-4-right w-1/2 p-10 flex items-center">
+          <div>
+            <h3>hello</h3>
+            <br />
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dignissimos omnis repellendus modi voluptatem, ipsam odio
+              necessitatibus dicta nostrum laborum officiis?
+            </p>
+            <br />
+            <button
+              class="bg-secondary text-white rounded-md p-2 px-7 hover:bg-third"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- section 5 -->
+    <section class="section-5 flex bg-primary">
+      <div class="section-5-left w-1/2 p-16">
+        <h4 class="text-3xl">Hello Ini Adalah Judul</h4>
+        <br />
+
+        <p class="max-w-[491px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, cum
+          quis inventore magni libero laudantium blanditiis dicta odio quibusdam
+          quo! Quos incidunt debitis quae alias ipsa sequi, hic voluptate
+          officiis!
+        </p>
+        <br />
+
+        <p class="font-light max-w-[491px] hidden sm:block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam
+          numquam adipisci ut eum tenetur ipsam id cupiditate nobis beatae?
+        </p>
+      </div>
+
+      <div class="section-5-right w-1/2 pr-16 my-16">
+        <img
+          src="https://images.unsplash.com/photo-1711064644461-e8607629e20e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          width="300px" width="100px"
+        />
+        <p class="font-light max-w-[491px] sm:hidden pt-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam
+          numquam adipisci ut eum tenetur ipsam id cupiditate nobis beatae?
+        </p>
+      </div>
+      <div class="section-5-right hidden w-1/2 pr-16 my-16">
+        <img
+          src="https://source.unsplash.com/491x286?coffe"
+          class="w-[480px] h-[286px]"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- section 6 -->
+    <section class="section-6 bg-secondary text-white p-32 text-center">
+      <p>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, hic
+        blanditiis quaerat maxime numquam magni."
+      </p>
+      <br />
+      <br />
+      <p class="mt-16 text-2xl"></p>
+    </section>
+
+    <!-- section 7 -->
+    <section class="section-7 bg-primary">
+      <div class="section-7-top text-center pt-14">
+        <h3 class="text-3xl">Hello ini apa ya</h3>
+        <p class="text-center max-w-[800px] mx-auto mt-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+          excepturi iste explicabo et numquam vero, in voluptatem architecto
+          temporibus commodi saepe adipisci magnam. Dicta corrupti aspernatur
+          officiis amet enim suscipit?
+        </p>
+      </div>
+      <div
+        class="section-7-bottom flex gap-3 justify-center items-center mt-24"
+      >
+        <div class="mb-12 rounded-md shadow-md rounded-t-md">
+          <div class="w-full">
+            <img
+              src="https://source.unsplash.com/300x400?lion"
+              class="w-full"
+              alt="Lion image"
+            />
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-sm lg:text-base mt-4 mb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <h3 class="font-semibold text-xl mb-2 mt-1">Playlist 4</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer 8-->
+    <footer class="footer flex bg-secondary text-white sm:py-16 py-9">
+      <div class="footer-left flex w-1/2 border-r-2">
+        <div class="sm:ml-32 lg:pl-96 pl-5 flex">
+          <h3 class="lg:mr-16 mr-3 text-2xl font-bold">
+            Agus <span>saputra</span>
+          </h3>
+          <div class="pr-3">
+            <h4 class="font-medium">Lets connect!</h4>
+            <h2 class="font-extralight">Yuk kenal!</h2>
+            <p class="font-thin">
+              Kenal lebih lanjut dengan saling follow dimedsos.
+              <a href="https://instagram.com/agusptraa" class="font-medium">Klik disini.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right w-1/2 border-l-2 pr-6">
+        <div class="flex gap-16 mb-10 ml-14">
+          <div class="px-4">
+            <h3 class="font-bold">Tautan</h3>
+            <ul>
+              <li>
+                <a href="#home" class="inline-block text-base hover:text-babyBluen my-3">Home</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-babyBluen mb-3">About me</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-babyBluen mb-3">Our Skills</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-babyBluen mb-3">Project</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li class="font-bold">Address</li>
+              <li class="font-extralight">Indonesia</li>
+              <li class="font-extralight">Riau</li>
+              <li class="font-extralight">Bengkalis, 28711</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex gap-9">
+          <h3 class="ml-14">&copy;2024-Unair</h3>
+          <h3 class="">Privacy — Terms</h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../dist/script.js"></script>
+  </body>
+</html>
